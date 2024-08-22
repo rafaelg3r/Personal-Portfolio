@@ -14,7 +14,16 @@
 
 /* general */
 body {
+  font-size: 1.6rem;
   height: 432rem;
   background: #06071a no-repeat top url(../imgs/Background.png);
 }
 /* Navbar */
+
+/* main */
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*?other */
