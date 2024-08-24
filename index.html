@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome!</title>
-    <link rel="stylesheet" href="./src/css/style.cssa" />
-  </head>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Just+Me+Again+Down+Here&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      />
+      <title>Welcome!</title>
+    </head>
   <body>
     <div class="container-all">
-      <header class="hide">
+      
         <nav>
-          <span class="logo">Rafael</span>
+          <span class="logo"><i>Rafael</i></span>
           <ul>
             <li><a href="home">Home</a></li>
             <li><a href="about">About</a></li>
@@ -37,7 +43,7 @@
             English
           </button>
         </nav>
-      </header>
+      
       <main>
         <div class="container-content">
           <div class="welcome">
@@ -123,28 +129,28 @@
           <div class="project-design-display"></div>
         </div>
       </section>
+      <section class="contact">
+        <img src="./src/imgs/5 Contact/Mail-Icon.svg" alt="" />
+        <img src="./src/imgs/5 Contact/discord.svg" alt="" />
+        <img src="./src/imgs/5 Contact/linkedin.svg" alt="" />
+        <img src="./src/imgs/5 Contact/github.svg" alt="" />
+        <img src="./src/imgs/5 Contact/left-line-footer.svg" alt="" />
+        <h4>Did you like my work? Get in touch!</h4>
+        <form action="get" id="contact-form">
+          <div class="form-name-subject-line">
+            <label for="name">Nome</label>
+            <input id="name" type="text" />
+            <label for="subject">Assunto</label>
+            <input id="subject" type="text" />
+          </div>
+          <label for="email">Email</label>
+          <input id="email" type="text" />
+          <label for="message">Mensagem</label>
+          <textarea name="message" id="message" form="contact-form"></textarea>
+          <button>Enviar</button>
+        </form>
+        <footer>&copy 2024 Rafael da Costa Vedana</footer>
+      </section>
     </div>
-    <section class="contact">
-      <img src="./src/imgs/5 Contact/Mail-Icon.svg" alt="" />
-      <img src="./src/imgs/5 Contact/discord.svg" alt="" />
-      <img src="./src/imgs/5 Contact/linkedin.svg" alt="" />
-      <img src="./src/imgs/5 Contact/github.svg" alt="" />
-      <img src="./src/imgs/5 Contact/left-line-footer.svg" alt="" />
-      <h4>Did you like my work? Get in touch!</h4>
-      <form action="get" id="contact-form">
-        <div class="form-name-subject-line">
-          <label for="name">Nome</label>
-          <input id="name" type="text" />
-          <label for="subject">Assunto</label>
-          <input id="subject" type="text" />
-        </div>
-        <label for="email">Email</label>
-        <input id="email" type="text" />
-        <label for="message">Mensagem</label>
-        <textarea name="message" id="message" form="contact-form"></textarea>
-        <button>Enviar</button>
-      </form>
-    </section>
-    <footer>&copy 2024 Rafael da Costa Vedana</footer>
   </body>
 </html>
