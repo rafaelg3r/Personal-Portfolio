@@ -4,26 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/style.cssa" />
   </head>
   <body>
-    <header class="hide">
-      <span></span>
-      <nav></nav>
-      <button></button>
-    </header>
-    <main>
-      <div class="container-content">
-        <div class="welcome">
-          <p><span>Welcome!</span> I am</p>
+    <div class="container-all">
+      <header class="hide">
+        <nav>
+          <span class="logo">Rafael</span>
+          <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="skills">Skills</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+          <button>
+            <svg
+              width="27"
+              height="26"
+              viewBox="0 0 27 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.125 13H8M1.125 13C1.125 19.6274 6.66548 25 13.5 25M1.125 13C1.125 6.37258 6.66548 1 13.5 1M8 13H19M8 13C8 19.6274 10.4624 25 13.5 25M8 13C8 6.37258 10.4624 1 13.5 1M19 13H25.875M19 13C19 6.37258 16.5376 1 13.5 1M19 13C19 19.6274 16.5376 25 13.5 25M25.875 13C25.875 6.37258 20.3345 1 13.5 1M25.875 13C25.875 19.6274 20.3345 25 13.5 25"
+                stroke="#A7AAE0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            English
+          </button>
+        </nav>
+      </header>
+      <main>
+        <div class="container-content">
+          <div class="welcome">
+            <p><span>Welcome!</span> I am</p>
+          </div>
+          <h1>Rafael da Costa Vedana</h1>
+          <div class="tittles">Web Designer</div>
+          <div class="tittles">Front-End Developer</div>
         </div>
-        <h1></h1>
-        <button class="tittles">Web Designer</button>
-        <button class="tittles">Front-End Developer</button>
-      </div>
-      <div class="container-profile-photo">
-        <img src="./src/imgs/circle-frame.png" alt="">
-      </div>
-    </main>
+        <div class="container-profile-photo">
+          <img src="./src/imgs/circle-frame.png" alt="" />
+        </div>
+      </main>
+      <!-- about me height = 602 -->
+      <section class="about-me">
+        <div class="about-tittle">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div>Who I Am?</div>
+          <div>Favorite Tools</div>
+          <div>Soft Skills</div>
+          <div>Languages Spoken</div>
+          <div>More About Me</div>
+          <div>
+            <span class="years-num">16</span>
+            <span class="years-text">Years Old</span>
+          </div>
+          <div>Currnetly, I Am Studying...</div>
+          <div>Socials</div>
+        </div>
+      </section>
+      <section class="Skills">
+        <div class="skills-header-container">
+          <div class="skills-tittle">
+            <h2>Skills Deck</h2>
+          </div>
+          <ul class="skills-icon-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="skills-cards">
+          <img
+            src="./src/imgs/3 Skills/Cards/html-card.png"
+            alt="Cartão com personagem simbolizando a linguagem HTML"
+          />
+          <img
+            src="./src/imgs/3 Skills/Cards/css-card.png"
+            alt="Cartão com personagem simbolizando a linguagem csS"
+          />
+          <img
+            src="./src/imgs/3 Skills/Cards/js-card.png"
+            alt="Cartão com personagem simbolizando a linguagem Javascript"
+          />
+        </div>
+      </section>
+      <section class="projects">
+        <div class="projects-left-content">
+          <div class="projects-tittle">
+            <h2>Projects</h2>
+          </div>
+          <div>Texto Projeto front-end</div>
+          <button>github</button>
+          <button>live</button>
+          <div>texto projeto design</div>
+          <button>alguma coisa aqui</button>
+        </div>
+        <div class="projetcts-right-content">
+          <h3>Front-end</h3>
+          <div class="projects-display">
+            <!-- aqui é meio complexo pq vai usar iframe-->
+          </div>
+          <h3>Design</h3>
+          <!-- grid -->
+          <div class="project-design-display"></div>
+          <div class="project-design-display"></div>
+          <div class="project-design-display"></div>
+        </div>
+      </section>
+    </div>
+    <section class="contact">
+      <img src="./src/imgs/5 Contact/Mail-Icon.svg" alt="" />
+      <img src="./src/imgs/5 Contact/discord.svg" alt="" />
+      <img src="./src/imgs/5 Contact/linkedin.svg" alt="" />
+      <img src="./src/imgs/5 Contact/github.svg" alt="" />
+      <img src="./src/imgs/5 Contact/left-line-footer.svg" alt="" />
+      <h4>Did you like my work? Get in touch!</h4>
+      <form action="get" id="contact-form">
+        <div class="form-name-subject-line">
+          <label for="name">Nome</label>
+          <input id="name" type="text" />
+          <label for="subject">Assunto</label>
+          <input id="subject" type="text" />
+        </div>
+        <label for="email">Email</label>
+        <input id="email" type="text" />
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" form="contact-form"></textarea>
+        <button>Enviar</button>
+      </form>
+    </section>
+    <footer>&copy 2024 Rafael da Costa Vedana</footer>
   </body>
 </html>
