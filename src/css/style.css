@@ -30,8 +30,8 @@ header {
 }
 
 nav {
-  position: fixed;
-  width: 100%;
+  /* position: fixed;
+  width: 100%; */
 
   display: flex;
   align-items: center;
@@ -43,9 +43,10 @@ nav {
   max-height: 6.9rem;
   border-radius: 1.6rem;
 
-  font-family: var(--secondary), 'Times New Roman';
-  backdrop-filter: blur(30px);
+  font-family: var(--secondary), "Times New Roman";
   background-color: rgba(217, 217, 217, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   & .logo {
     font-size: 2.4rem;
@@ -54,7 +55,9 @@ nav {
     background: linear-gradient(to right, #ffffff 0%, #ffffff66 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     cursor: pointer;
+    user-select: none;
   }
 
   & ul {
@@ -68,7 +71,118 @@ nav {
       font-weight: 400;
     }
   }
+
+  & button {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    padding: 0.8rem 1.4rem;
+
+    font-family: inherit;
+    font-size: 2rem;
+
+    color: white;
+    background-color: transparent;
+    border: solid 0.2rem #fff;
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+  }
 }
+
 /* main */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 28rem;
+  margin: 11.8rem auto;
+
+  & .container-content {
+    display: flex;
+    flex-flow: column;
+    gap: 7rem;
+
+    & .welcome {
+      font-size: 2.4rem;
+      font-family: var(--secondary);
+      font-weight: 400;
+      color: white;
+
+      & span {
+        color: #b056ff;
+      }
+    }
+
+    & .container-principal-text {
+      display: flex;
+      flex-flow: column;
+      gap: 2.8rem;
+
+      & h1 {
+        font-family: var(--handmade);
+        font-size: 12.8rem;
+        line-height: 80%;
+        font-weight: 400;
+
+        color: white;
+        max-width: 52.6rem;
+      }
+
+      & .profissoes {
+        display: flex;
+        gap: 4rem;
+
+        & .professional-tittles {
+          font-size: 1.6rem;
+          font-family: var(--principal);
+          font-weight: 400;
+
+          background-color: #101123;
+          color: white;
+          box-shadow: 0 0 8px #b056ff, 0 -1px 0 #b056ff;
+          cursor: pointer;
+
+          padding: 0.4rem 2.4rem;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+
+  & .container-profile-photo {
+    width: 38.4rem;
+    height: 38.4rem;
+    border-radius: 50%;
+    background-color: white;
+  }
+}
+
+/* About me */
+
+section.about-me {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  & .container-about-me {
+    width: 115rem;
+    height: 60.2rem;
+    background-color: rgba(217, 217, 217, 0.1);
+
+    & .about-grid {
+      display: grid;
+
+      & div {
+        background-color: #b056ff;
+        margin: 2rem;
+      }
+    }
+  }
+}
 
 /*?other */
