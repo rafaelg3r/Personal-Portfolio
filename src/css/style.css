@@ -12,13 +12,42 @@
   --handmade: "Just Me Again Down Here";
 
   /** Colors */
+
+  --dark-blue: #06071a;
+  --dark-blue-light: #101123;
+
+  /* borders */
+  --Who-i-am-border: radial-gradient(
+        circle at 100% 100%,
+        #101123 0,
+        #101123 8px,
+        transparent 8px
+      )
+      0% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 0 100%, #101123 0, #101123 8px, transparent 8px)
+      100% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 100% 0, #101123 0, #101123 8px, transparent 8px)
+      0% 100%/10px 10px no-repeat,
+    radial-gradient(circle at 0 0, #101123 0, #101123 8px, transparent 8px) 100%
+      100%/10px 10px no-repeat,
+    linear-gradient(#101123, #101123) 50% 50% / calc(100% - 4px)
+      calc(100% - 20px) no-repeat,
+    linear-gradient(#101123, #101123) 50% 50% / calc(100% - 20px)
+      calc(100% - 4px) no-repeat,
+    linear-gradient(
+      -122deg,
+      #575a99 0%,
+      rgb(29, 30, 51) 16%,
+      #1d1e33 79%,
+      rgb(87, 90, 153) 100%
+    );
 }
 
 /* general */
 body {
   font-size: 1.6rem;
   height: 432rem;
-  background: #06071a no-repeat top url(../imgs/Background.png);
+  background: var(--dark-blue) no-repeat top url(../imgs/Background.png);
   display: flex;
   justify-content: top;
   align-items: center;
@@ -170,19 +199,53 @@ section.about-me {
   width: 100%;
 
   & .container-about-me {
-    width: 115rem;
-    height: 60.2rem;
     background-color: rgba(217, 217, 217, 0.1);
-
-    & .about-grid {
-      display: grid;
-
-      & div {
-        background-color: #b056ff;
-        margin: 2rem;
-      }
-    }
+    width: 111.8rem;
+    height: 602;
   }
 }
 
 /*?other */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(26, 1fr);
+  gap: 2rem;
+
+  & div {
+    background-color: var(--dark-blue-light);
+    border-radius: 1rem;
+    padding: 2rem 0 0 2rem;
+    font-size: 2rem;
+    color: white;
+  }
+}
+
+.div1 {
+  grid-area: 1 / 1 / 14 / 4;
+
+  background-image: url(../imgs/2\ About/Who-I-Am-bento.png) ;
+  background-size: cover;
+  box-shadow: inset 0 0 1.5rem 0.1rem rgb(81, 51, 117, 0.5);
+}
+.div2 {
+  grid-area: 1 / 4 / 7 / 5;
+}
+.div3 {
+  grid-area: 1 / 5 / 10 / 7;
+}
+.div4 {
+  grid-area: 21 / 1 / 27 / 2;
+}
+.div5 {
+  grid-area: 14 / 1 / 21 / 2;
+}
+.div6 {
+  grid-area: 14 / 2 / 27 / 4;
+}
+.div7 {
+  grid-area: 7 / 4 / 27 / 5;
+}
+.div8 {
+  grid-area: 10 / 5 / 27 / 7;
+}
