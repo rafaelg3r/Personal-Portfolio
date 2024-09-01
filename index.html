@@ -13,36 +13,35 @@
     <title>Welcome!</title>
   </head>
   <body>
+    <nav>
+      <span class="logo"><i>Rafael</i></span>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+      <button>
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 27 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.125 13H8M1.125 13C1.125 19.6274 6.66548 25 13.5 25M1.125 13C1.125 6.37258 6.66548 1 13.5 1M8 13H19M8 13C8 19.6274 10.4624 25 13.5 25M8 13C8 6.37258 10.4624 1 13.5 1M19 13H25.875M19 13C19 6.37258 16.5376 1 13.5 1M19 13C19 19.6274 16.5376 25 13.5 25M25.875 13C25.875 6.37258 20.3345 1 13.5 1M25.875 13C25.875 19.6274 20.3345 25 13.5 25"
+            stroke="#A7AAE0"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Eng
+      </button>
+    </nav>
     <div class="container-all">
-      <nav>
-        <span class="logo"><i>Rafael</i></span>
-        <ul>
-          <li><a href="home">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="skills">Skills</a></li>
-          <li><a href="projects">Projects</a></li>
-          <li><a href="contact">Contact</a></li>
-        </ul>
-        <button>
-          <svg
-            width="25"
-            height="25"
-            viewBox="0 0 27 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.125 13H8M1.125 13C1.125 19.6274 6.66548 25 13.5 25M1.125 13C1.125 6.37258 6.66548 1 13.5 1M8 13H19M8 13C8 19.6274 10.4624 25 13.5 25M8 13C8 6.37258 10.4624 1 13.5 1M19 13H25.875M19 13C19 6.37258 16.5376 1 13.5 1M19 13C19 19.6274 16.5376 25 13.5 25M25.875 13C25.875 6.37258 20.3345 1 13.5 1M25.875 13C25.875 19.6274 20.3345 25 13.5 25"
-              stroke="#A7AAE0"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          Eng
-        </button>
-      </nav>
-
       <main>
         <div class="container-content">
           <div class="welcome">
@@ -59,7 +58,9 @@
           </div>
         </div>
 
-        <div class="container-profile-photo"><img src="./src/imgs/1 Hero/photo-frame.png" alt=""></div>
+        <div class="container-profile-photo">
+          <img src="./src/imgs/1 Hero/photo-frame.png" alt="" />
+        </div>
       </main>
       <!-- about me height = 602 -->
       <section class="about-me">
@@ -216,7 +217,7 @@
       <section class="projects">
         <div class="projects-container">
           <div class="projects-frontend">
-            <div class="FE-left-content">
+            <div class="P-left-content">
               <div class="projects-tittle">
                 <h2 class="section-tittle">Projects</h2>
               </div>
@@ -247,47 +248,117 @@
                 </button>
               </div>
             </div>
-            <div class="FE-right-content">
+            <div class="P-right-content">
               <h3>Front-end</h3>
-              <div class="projects-display">
-               
-              </div>
+              <div class="projects-display display"></div>
             </div>
           </div>
           <div class="projects-design">
-            <h3>Design</h3>
-            <!-- grid -->
-            <div>texto projeto design</div>
-            <button class="project-button">alguma coisa aqui</button>
-            <div class="project-design-display"></div>
-            <div class="project-design-display"></div>
-            <div class="project-design-display"></div>
+            <div class="P-left-content">
+              <div class="projects-tittle">
+                <h2 class="section-tittle">Projects</h2>
+              </div>
+              <div class="projects-descriptions">
+                <div class="projects-text">
+                  <h2 class="project-tittle">Este Portifólio</h2>
+                  <p>
+                    Desenvolvi este portfólio para apresentar minhas habilidades
+                    como desenvolvedor front-end e web designer. O site destaca
+                    minha biografia, habilidades e projetos concluídos. Usei
+                    HTML, CSS e JavaScript para criar uma interface funcional e
+                    atraente, e também adotei uma abordagem criativa no design.
+                  </p>
+                </div>
+                <button class="project-button">
+                  github
+                  <img
+                    src="./src/imgs/4 Projetos/Github.svg"
+                    alt="github logo"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="P-right-content">
+
+              <h3>Design</h3>
+
+              <div class="container-design-displays">
+
+                <div class="design-display display"></div>
+
+                <div class="smaller-displays">
+
+                  <div class="design-display-small display"></div>
+                  <div class="design-display-small display"></div>
+
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="contact">
-        <img src="./src/imgs/5 Contact/Mail-Icon.svg" alt="" />
-        <img src="./src/imgs/5 Contact/discord.svg" alt="" />
-        <img src="./src/imgs/5 Contact/linkedin.svg" alt="" />
-        <img src="./src/imgs/5 Contact/github.svg" alt="" />
-        <img src="./src/imgs/5 Contact/left-line-footer.svg" alt="" />
-        <h4>Did you like my work? Get in touch!</h4>
-        <form action="get" id="contact-form">
-          <div class="form-name-subject-line">
-            <label for="name">Nome</label>
-            <input id="name" type="text" />
-            <label for="subject">Assunto</label>
-            <input id="subject" type="text" />
-          </div>
-          <label for="email">Email</label>
-          <input id="email" type="text" />
-          <label for="message">Mensagem</label>
-          <textarea name="message" id="message" form="contact-form"></textarea>
-          <button>Enviar</button>
-        </form>
-        <footer>&copy 2024 Rafael da Costa Vedana</footer>
       </section>
     </div>
+    <section class="contact">
+      <div class="container-contact">
+        <div class="socials-contact-navigation">
+          <div class="socials-link-contact">
+        
+              <img src="./src/imgs/5 Contact/Mail-Icon.svg" alt="" />
+              <img src="./src/imgs/5 Contact/discord.svg" alt="" />
+              <img src="./src/imgs/5 Contact/linkedin.svg" alt="" />
+              <img src="./src/imgs/5 Contact/github.svg" alt="" />
+          </div>
+            <img src="./src/imgs/5 Contact/left-line-footer.svg" alt="" class="line-svg"/>
+        </div>
+          <div class="contact-form-container">
+            <h4>Did you like my work? Get in touch!</h4>
+            <form action="get" id="contact-form">
+              <div class="name-subject-line">
+                <div class="name-line form-line">
+                  <label for="name">Nome</label>
+                  <input id="name" type="text" class="input-name"/>
+                  
+                </div>
+                
+                <div class="subject-line form-line">
+  
+                  <label for="subject">Assunto</label>
+                  <input id="subject" type="text" class="input-subject"/>
+                </div>
+              </div>
+              <div class="email-line  form-line">
+                
+                <label for="email">Email</label>
+                <input id="email" type="text" />
+              </div>
+              <div class="message-line form-line">
+                
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" form="contact-form"></textarea>
+              </div>
+              <button>Enviar</button>
+            </form>
+          </div>
+          <div class="navigation-contact">
+            <div class="navigation-link-contact">
+              
+              <img src="./src/imgs/5 Contact/home-icon.svg" alt="" />
+              <img src="./src/imgs/5 Contact/about-icon.svg" alt="" />
+              <img src="./src/imgs/5 Contact/skills-icon.svg" alt="" />
+              <img src="./src/imgs/5 Contact/Projects.svg" alt="" />
+              
+            </div>
+            <img src="./src/imgs/5 Contact/left-line-footer.svg" alt="" />
+          </div>
+        </div>
+
+    </section>
+    
+    <footer>
+      
+      
+      <span class="footer-text"> &copy; 2024 Rafael da Costa Vedana</span>
+    </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
