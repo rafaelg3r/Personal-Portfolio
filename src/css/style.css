@@ -19,6 +19,10 @@
 }
 
 /* general */
+a {
+  text-decoration: none;
+}
+
 body {
   font-size: 1.6rem;
   height: 432rem;
@@ -147,6 +151,8 @@ main {
     gap: 7rem;
 
     .welcome {
+      margin-left: -5rem;
+
       font-size: 2.4rem;
       font-family: var(--secondary);
       font-weight: 400;
@@ -168,6 +174,7 @@ main {
         line-height: 80%;
         font-weight: 400;
 
+        cursor: default;
         color: white;
         max-width: 52.6rem;
       }
@@ -184,12 +191,19 @@ main {
           background-color: #101123;
           color: white;
           box-shadow: 0 0 8px #b056ff, 0 -1px 0 #b056ff;
-          cursor: pointer;
+          cursor: default;
 
           padding: 0.4rem 2.4rem;
           border-radius: 2rem;
         }
       }
+    }
+  }
+
+  img {
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }
@@ -202,7 +216,8 @@ section.about-me {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 25rem;
+  padding-top: 2rem;
+  margin-top: 24rem;
 }
 
 .card-abt:hover {
@@ -256,8 +271,10 @@ section.about-me {
       -webkit-text-fill-color: transparent;
     }
     span.years-num {
+      font-family: var(--principal);
       font-size: 9.6rem;
       font-weight: 400;
+
       margin-top: 2.4rem;
       line-height: 0.95;
     }
@@ -295,6 +312,10 @@ section.about-me {
       gap: 1.3rem;
       margin-left: 2rem;
       margin-top: 0.6rem;
+
+      .vscode-svg {
+        margin-top: -0.3rem;
+      }
     }
   }
   .div-lang {
@@ -383,10 +404,20 @@ section.about-me {
   }
 }
 
+/*! socials link images*/
+section.about-me a {
+  transition: transform .2s, filter .1s;
+  &:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 .4rem 0.4rem rgba(0, 0, 0, 0.8));
+  }
+}
+
 /* Skills */
 
 section.skills {
-  margin-top: 25rem;
+  padding-top: 3rem;
+  margin-top: 22rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,7 +469,8 @@ section.skills {
 /* projects */
 
 section.projects {
-  margin-top: 25rem;
+  padding-top: 3rem;
+  margin-top: 22rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -579,7 +611,7 @@ section.contact {
   background-color: var(--dark-blue-light);
   max-width: 100%;
   width: 100vw;
-  height: 49.8rem;
+  height: 49rem;
 
   .container-contact {
     display: flex;
@@ -691,7 +723,7 @@ section.contact {
 
     .socials-contact-navigation {
       flex-flow: column;
-      margin-top: 6.9rem;
+      margin-top: 9rem;
       margin-bottom: 0;
     }
     .navigation-contact {
@@ -726,7 +758,7 @@ footer {
   background: var(--semi-dark-blue);
   max-width: 100%;
   width: 100vw;
-  height: 4rem;
+  padding: 0.8rem 0;
 
   display: flex;
   justify-content: center;
