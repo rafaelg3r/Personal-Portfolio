@@ -5,7 +5,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/default.css">
+    <link rel="stylesheet" href="./src/css/pt-br.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Just+Me+Again+Down+Here&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -13,7 +15,7 @@
     <title>Bem-vindo!</title>
   </head>
   <body>
-    <nav>
+    <nav id="home">
       <span class="logo"><i>Rafael</i></span>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -22,7 +24,7 @@
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
-      <a href="English.html">
+      <a href="Eng.html">
         <button>
           <svg
             width="25"
@@ -39,13 +41,13 @@
               stroke-linejoin="round"
             />
           </svg>
-          Eng
+          EN
         </button>
       </a>
     </nav>
     <div class="container-all">
       <!-- main -->
-      <main id="home">
+      <main>
         <div class="container-content">
           <div class="welcome">
             <p><span>Bem-vindo!</span> Me Chamo</p>
@@ -77,15 +79,15 @@
                 <p class="semi-tittle">Quem sou?</p>
                 <p class="text-about">
                   Olá! Eu me chamo Rafael, um desenvolvedor front-end e web designer,
-                  apaixonado em transformar ideias em experiências inovadoras e funcionais . Meu foco não é apenas em
+                  apaixonado em transformar ideias em experiências inovadoras e funcionais. Meu foco não é apenas em
                   atender as necessidades do usuário, mas também impressiona-lo visualmente!
                 </p>
               </div>
               <div class="years-social-study-block">
                 <div class="years-social-block">
                   <div class="div-years card-abt">
-                    <span class="years-num">16</span>
-                    <span class="years-text">Anos de Idade</span>
+                    <span class="years-num years-highlight">16</span>
+                    <span class="years-text years-highlight">Anos de Idade</span>
                   </div>
                   <div class="div-social card-abt">
                     <p class="semi-tittle">Social</p>
@@ -125,7 +127,7 @@
             <div class="about-right-block">
               <div class="fav-soft-block">
                 <div class="div-fav card-abt">
-                  <p class="semi-tittle">Favorite Tools</p>
+                  <p class="semi-tittle">Apps Favoritos</p>
                   <div class="fav-logos">
                     <a href="">
                       <img
@@ -154,10 +156,14 @@
               </div>
               <div class="lang-more-block">
                 <div class="div-lang card-abt">
-                  <p class="semi-tittle">Languages Spoken</p>
+                  <p class="semi-tittle">Idiomas Falados</p>
+                  <ul>
+                    <li>Português <span class="lang-highlight">(nativo)</span></li>
+                    <li>Inglês <span class="lang-highlight">(intermediário)</span></li>
+                  </ul>
                 </div>
                 <div class="div-more card-abt">
-                  <p class="semi-tittle">More About Me</p>
+                  <p class="semi-tittle">Mais Sobre Mim</p>
                 </div>
               </div>
             </div>
@@ -331,24 +337,24 @@
         </div>
           <div class="contact-form-container">
             <h4>Did you like my work? Get in touch!</h4>
-            <form action="get" id="contact-form">
+            <form action="get" id="contact-form" autocomplete="off">
               <div class="name-subject-line">
                 <div class="name-line form-line">
                   <label for="name">Nome</label>
-                  <input id="name" type="text" class="input-name"/>
+                  <input autocomplete="off" id="name" type="text" class="input-name"/>
                   
                 </div>
                 
                 <div class="subject-line form-line">
   
                   <label for="subject">Assunto</label>
-                  <input id="subject" type="text" class="input-subject"/>
+                  <input autocomplete="off" id="subject" type="text" class="input-subject"/>
                 </div>
               </div>
               <div class="email-line  form-line">
                 
                 <label for="email">Email</label>
-                <input id="email" type="text" />
+                <input autocomplete="off" id="email" type="text" />
               </div>
               <div class="message-line form-line">
                 
@@ -361,7 +367,7 @@
           <div class="navigation-contact">
             <div class="navigation-link-contact">
               
-              <a href="#home"><img src="./src/imgs/5 Contact/home-icon.svg" href="" alt="" /></a>
+              <a href="#home"><img src="./src/imgs/5 Contact/home-icon.svg" alt="" /></a>
 
               <a href="#about"><img src="./src/imgs/5 Contact/about-icon.svg" alt="" /></a>
               <a href="#skills"><img src="./src/imgs/5 Contact/skills-icon.svg" alt="" /></a>
@@ -374,10 +380,9 @@
 
     </section>
       <!-- footer -->
-
-    <footer>  
-      <span class="footer-text"> &copy; 2024 Rafael da Costa Vedana</span>
-    </footer>
+      <footer>
+        <span class="footer-text"> &copy; 2024 Rafael da Costa Vedana</span>
+      </footer>
 
 
      <!-- Jquery for tilt cards-->

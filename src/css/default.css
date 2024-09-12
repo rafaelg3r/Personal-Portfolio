@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: 62.5%;
   --principal: "Poppins";
@@ -25,7 +29,6 @@ a {
 
 body {
   font-size: 1.6rem;
-  height: 432rem;
   background: var(--dark-blue) no-repeat top url(../imgs/Background.png);
   display: flex;
   justify-content: top;
@@ -78,17 +81,17 @@ button {
     box-shadow: 0 0 1rem 0.1rem #a7aae0;
   }
 }
-/* Navbar */
 
+/* Navbar */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30rem;
+  gap: 24rem;
 
   padding: 2.2rem 2.8rem;
   margin-top: 1rem;
-  max-width: 139.6rem;
+  max-width: 133rem;
   max-height: 6.9rem;
   border-radius: 1.6rem;
 
@@ -110,27 +113,29 @@ nav {
 
     transition: transform 300ms;
     &:hover {
-      transform: scale(1.05) rotate(-4deg);
+      transform: scale(1.2  ) rotate(-4deg);
     }
   }
 
   ul {
     display: flex;
     list-style: none;
-    gap: 3.2rem;
+    gap: 5rem;
+
+    li {
+      transition: text-shadow 0.3s, transform 0.2s;
+    }
+
+    li:hover {
+      text-shadow: 0 0 1rem #ffffff;
+      transform: scale(1.2);
+    }
+
     li a {
       color: #fff;
       text-decoration: none;
       font-size: 2rem;
       font-weight: 400;
-    }
-
-    a {
-      transition: text-shadow 0.3s, letter-spacing 0.3s;
-    }
-    a:hover {
-      text-shadow: 0 0 1rem #ffffff;
-      letter-spacing: 4px;
     }
   }
 }
@@ -233,7 +238,7 @@ section.about-me {
 
     div .semi-tittle {
       display: inline-block;
-      padding: 2rem 0 0 2rem;
+      padding: 1rem 0 0 2rem;
 
       font-size: 2.4rem;
       font-family: var(--principal);
@@ -255,7 +260,7 @@ section.about-me {
       padding: 1rem 0 0 2rem;
     }
 
-    span,
+    span.years-highlight,
     .semi-tittle {
       color: #fff;
       background-image: -webkit-linear-gradient(
@@ -307,9 +312,9 @@ section.about-me {
 
     .fav-logos {
       display: flex;
-      gap: 1.3rem;
-      margin-left: 2rem;
-      margin-top: 0.6rem;
+      /* gap: 4rem; */
+      justify-content: space-around;
+     margin: 1rem 2rem 0 2rem;
 
       .vscode-svg {
         margin-top: -0.3rem;
@@ -320,6 +325,33 @@ section.about-me {
     width: 28.4rem;
     height: 17.8rem;
     background-image: url(../imgs/2\ About/lang-bg.png);
+    display: flex;
+    flex-flow: column;
+
+    ul {
+      color: white;
+      list-style: none;
+      font-family: var(--secondary);
+      font-weight: 300;
+      font-size: 2rem;
+      
+      display: flex;
+      flex-flow: column;
+      gap: 1.6rem;
+      margin-top: .6rem;  
+      align-self: center;
+
+
+      :first-child {
+        margin-top: 2rem;
+      }
+    }
+
+    span.lang-highlight {
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: #A7AAE0;
+    }
   }
   .div-social {
     display: flex;
@@ -609,7 +641,7 @@ section.contact {
   background-color: var(--dark-blue-light);
   max-width: 100%;
   width: 100vw;
-  height: 49rem;
+  height: max-content;
 
   .container-contact {
     display: flex;
@@ -746,6 +778,7 @@ section.contact {
     justify-content: center;
     width: 40%;
     margin: 0 auto;
+    margin-top: 1.8rem;
     font-size: 2rem;
   }
 }
@@ -775,3 +808,4 @@ footer {
     padding-bottom: 0.1rem;
   }
 }
+
