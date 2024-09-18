@@ -11,7 +11,7 @@ html {
 
 :root {
   font-size: 62.5%;
-  --principal: "Poppins";
+  --primary: "Poppins";
   --secondary: "JetBrains Mono";
   --handmade: "Just Me Again Down Here";
 
@@ -96,9 +96,6 @@ nav {
   border-radius: 1.6rem;
 
   font-family: var(--secondary), "Times New Roman";
-  /* background-color: rgba(217, 217, 217, 0.1);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
 
   .logo {
     font-size: 2.4rem;
@@ -188,7 +185,7 @@ main {
 
         .professional-tittles {
           font-size: 1.6rem;
-          font-family: var(--principal);
+          font-family: var(--primary);
           font-weight: 400;
 
           background-color: #101123;
@@ -241,13 +238,13 @@ section.about-me {
       padding: 1rem 0 0 2rem;
 
       font-size: 2.4rem;
-      font-family: var(--principal);
+      font-family: var(--primary);
       font-weight: 600;
     }
 
     div .text-about {
       font-size: 2rem;
-      font-family: var(--principal);
+      font-family: var(--primary);
       text-align: justify;
 
       color: #c4c4c4;
@@ -270,11 +267,10 @@ section.about-me {
       );
       background-clip: text;
       -webkit-background-clip: text;
-      text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
     }
     span.years-num {
-      font-family: var(--principal);
+      font-family: var(--primary);
       font-size: 9.6rem;
       font-weight: 400;
 
@@ -618,7 +614,7 @@ section.projects {
     font-size: 2.4rem;
     font-family: var(--handmade);
 
-    .project-button:hover {
+    &:hover {
       letter-spacing: 7px;
     }
 
@@ -658,7 +654,7 @@ section.contact {
       h4 {
         font-size: 2.8rem;
         font-weight: 600;
-        font-family: var(--principal);
+        font-family: var(--primary);
         color: white;
       }
 
@@ -666,7 +662,7 @@ section.contact {
         font-size: 1.4rem;
         font-weight: 400;
         color: white;
-        font-family: var(--principal);
+        font-family: var(--primary);
         letter-spacing: 2px;
       }
 
