@@ -113,7 +113,7 @@ nav {
 
     transition: transform 300ms;
     &:hover {
-      transform: scale(1.2  ) rotate(-4deg);
+      transform: scale(1.2) rotate(-4deg);
     }
   }
 
@@ -314,7 +314,7 @@ section.about-me {
       display: flex;
       /* gap: 4rem; */
       justify-content: space-around;
-     margin: 1rem 2rem 0 2rem;
+      margin: 1rem 2rem 0 2rem;
 
       .vscode-svg {
         margin-top: -0.3rem;
@@ -334,13 +334,12 @@ section.about-me {
       font-family: var(--secondary);
       font-weight: 300;
       font-size: 2rem;
-      
+
       display: flex;
       flex-flow: column;
       gap: 1.6rem;
-      margin-top: .6rem;  
+      margin-top: 0.6rem;
       align-self: center;
-
 
       :first-child {
         margin-top: 2rem;
@@ -350,7 +349,7 @@ section.about-me {
     span.lang-highlight {
       font-weight: 400;
       font-size: 1.6rem;
-      color: #A7AAE0;
+      color: #a7aae0;
     }
   }
   .div-social {
@@ -809,3 +808,64 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+
+  nav {
+    width: 74rem;
+    gap: 2rem;
+    ul {
+      gap: 1rem;
+    }
+  }
+
+  .container-all {
+    max-width: 75rem;
+  }
+
+  /* main */
+  main {
+    flex-flow: column;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
+    gap: 6rem;
+
+    .container-content {
+      gap: 1rem;
+
+      .welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    .profissoes {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  /* about */
+  section.about-me {
+    margin-top: 8rem;
+    /* flex-direction: column; */
+
+    .about-flex-box {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+
+      .about-right-block {
+        flex-flow: row-reverse;
+      }
+    }
+  }
+}
