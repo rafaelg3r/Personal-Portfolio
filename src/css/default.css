@@ -218,228 +218,226 @@ section.about-me {
   width: 100%;
   padding-top: 2rem;
   margin-top: 24rem;
-}
 
-.card-abt:hover {
-  cursor: grabbing;
-}
-
-/** individual cards are in here */
-.about-flex-box {
-  display: flex;
-  gap: 2rem;
-
-  div {
-    border-radius: 1rem;
-    font-size: 2rem;
-
-    div .semi-tittle {
-      display: inline-block;
-      padding: 1rem 0 0 2rem;
-
-      font-size: 2.4rem;
-      font-family: var(--primary);
-      font-weight: 600;
-    }
-
-    div .text-about {
-      font-size: 2rem;
-      font-family: var(--primary);
-      text-align: justify;
-
-      color: #c4c4c4;
-      padding: 1.2rem 2.6rem 4.4rem 2.6rem;
-    }
-
-    .div-social p,
-    .div-lang p,
-    .div-fav p {
-      padding: 1rem 0 0 2rem;
-    }
-
-    span.years-highlight,
-    .semi-tittle {
-      color: #fff;
-      background-image: -webkit-linear-gradient(
-        0deg,
-        #ffffff 0%,
-        #ffffff66 100%
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    span.years-num {
-      font-family: var(--primary);
-      font-size: 9.6rem;
-      font-weight: 400;
-
-      margin-top: 2.4rem;
-      line-height: 0.95;
-    }
-    span.years-text {
-      font-size: 2rem;
-      margin-bottom: 1.6rem;
-    }
+  .card-abt:hover {
+    cursor: grabbing;
   }
 
-  .div-who,
-  .div-fav,
-  .div-lang,
-  .div-social,
-  .div-study,
-  .div-years,
-  .div-soft,
-  .div-more {
-    box-shadow: -1rem 1rem 1.4rem rgba(0, 0, 0, 0.2);
-  }
-
-  .div-who {
-    width: 55rem;
-    height: 26.2rem;
-    background-image: url(../imgs/2\ About/Who-bg.png);
-  }
-  .div-fav {
-    width: 24.4rem;
-    height: 11.2rem;
-    background-image: url(../imgs/2\ About/fav-bg.png);
-    display: flex;
-    flex-flow: column;
-
-    .fav-logos {
-      display: flex;
-      /* gap: 4rem; */
-      justify-content: space-around;
-      margin: 1rem 2rem 0 2rem;
-
-      .vscode-svg {
-        margin-top: -0.3rem;
-      }
-    }
-  }
-  .div-lang {
-    width: 28.4rem;
-    height: 17.8rem;
-    background-image: url(../imgs/2\ About/lang-bg.png);
-    display: flex;
-    flex-flow: column;
-
-    ul {
-      color: white;
-      list-style: none;
-      font-family: var(--secondary);
-      font-weight: 300;
-      font-size: 2rem;
-
-      display: flex;
-      flex-flow: column;
-      gap: 1.6rem;
-      margin-top: 0.6rem;
-      align-self: center;
-
-      :first-child {
-        margin-top: 2rem;
-      }
-    }
-
-    span.lang-highlight {
-      font-weight: 400;
-      font-size: 1.6rem;
-      color: #a7aae0;
-    }
-  }
-  .div-social {
-    display: flex;
-    flex-flow: column;
-    width: 20.6rem;
-    height: 9.6rem;
-    background-image: url(../imgs/2\ About/social-bg.png);
-
-    .social-logos {
-      display: flex;
-      gap: 1.3rem;
-      margin-left: 2rem;
-      margin-top: 0.7rem;
-    }
-  }
-  .div-years {
-    width: 20.6rem;
-    height: 15.4rem;
-    background-image: url(../imgs/2\ About/years-bg.png);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .div-study {
-    width: 32.4rem;
-    height: 26rem;
-    background-image: url(../imgs/2\ About/study-bg.png);
-  }
-  .div-soft {
-    width: 24.4rem;
-    height: 41rem;
-    background-image: url(../imgs/2\ About/soft-bg.png);
-  }
-  .div-more {
-    width: 28.4rem;
-    height: 34.4rem;
-    background-image: url(../imgs/2\ About/more-bg.png);
-  }
-
-  .about-left-block {
-    display: flex;
-    flex-flow: column;
-    gap: 2rem;
-
-    .years-social-study-block {
-      display: flex;
-      gap: 2rem;
-    }
-
-    .years-social-block {
-      display: flex;
-      flex-flow: column;
-      gap: 1rem;
-
-      .div-years {
-        border-radius: 1rem 1rem 0 0;
-      }
-
-      .div-social {
-        border-radius: 0 0 1rem 1rem;
-      }
-    }
-  }
-
-  .about-right-block {
+  /** individual cards are in here */
+  .about-flex-box {
     display: flex;
     gap: 2rem;
 
-    .fav-soft-block {
+    div {
+      border-radius: 1rem;
+      font-size: 2rem;
+
+      div .semi-tittle {
+        display: inline-block;
+        padding: 1rem 0 0 2rem;
+
+        font-size: 2.4rem;
+        font-family: var(--primary);
+        font-weight: 600;
+      }
+
+      div .text-about {
+        font-size: 2rem;
+        font-family: var(--primary);
+        text-align: justify;
+
+        color: #c4c4c4;
+        padding: 1.2rem 2.6rem 4.4rem 2.6rem;
+      }
+
+      .div-social p,
+      .div-lang p,
+      .div-fav p {
+        padding: 1rem 0 0 2rem;
+      }
+
+      span.years-highlight,
+      .semi-tittle {
+        color: #fff;
+        background-image: -webkit-linear-gradient(
+          0deg,
+          #ffffff 0%,
+          #ffffff66 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      span.years-num {
+        font-family: var(--primary);
+        font-size: 9.6rem;
+        font-weight: 400;
+
+        margin-top: 2.4rem;
+        line-height: 0.95;
+      }
+      span.years-text {
+        font-size: 2rem;
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    .div-who,
+    .div-fav,
+    .div-lang,
+    .div-social,
+    .div-study,
+    .div-years,
+    .div-soft,
+    .div-more {
+      box-shadow: -1rem 1rem 1.4rem rgba(0, 0, 0, 0.2);
+    }
+
+    .div-who {
+      width: 55rem;
+      height: 26.2rem;
+      background-image: url(../imgs/2-About/Who-bg.png);
+    }
+    .div-fav {
+      width: 24.4rem;
+      height: 11.2rem;
+      background-image: url(../imgs/2-About/fav-bg.png);
+      display: flex;
+      flex-flow: column;
+
+      .fav-logos {
+        display: flex;
+        /* gap: 4rem; */
+        justify-content: space-around;
+        margin: 1rem 2rem 0 2rem;
+
+        .vscode-svg {
+          margin-top: -0.3rem;
+        }
+      }
+    }
+    .div-lang {
+      width: 28.4rem;
+      height: 17.8rem;
+      background-image: url(../imgs/2-About/lang-bg.png);
+      display: flex;
+      flex-flow: column;
+
+      ul {
+        color: white;
+        list-style: none;
+        font-family: var(--secondary);
+        font-weight: 300;
+        font-size: 2rem;
+
+        display: flex;
+        flex-flow: column;
+        gap: 1.6rem;
+        margin-top: 0.6rem;
+        align-self: center;
+
+        :first-child {
+          margin-top: 2rem;
+        }
+      }
+
+      span.lang-highlight {
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: #a7aae0;
+      }
+    }
+    .div-social {
+      display: flex;
+      flex-flow: column;
+      width: 20.6rem;
+      height: 9.6rem;
+      background-image: url(../imgs/2-About/social-bg.png);
+
+      .social-logos {
+        display: flex;
+        gap: 1.3rem;
+        margin-left: 2rem;
+        margin-top: 0.7rem;
+      }
+    }
+    .div-years {
+      width: 20.6rem;
+      height: 15.4rem;
+      background-image: url(../imgs/2-About/years-bg.png);
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .div-study {
+      width: 32.4rem;
+      height: 26rem;
+      background-image: url(../imgs/2-About/study-bg.png);
+    }
+    .div-soft {
+      width: 24.4rem;
+      height: 41rem;
+      background-image: url(../imgs/2-About/soft-bg.png);
+    }
+    .div-more {
+      width: 28.4rem;
+      height: 34.4rem;
+      background-image: url(../imgs/2-About/more-bg.png);
+    }
+
+    .about-left-block {
       display: flex;
       flex-flow: column;
       gap: 2rem;
+
+      .years-social-study-block {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .years-social-block {
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+
+        .div-years {
+          border-radius: 1rem 1rem 0 0;
+        }
+
+        .div-social {
+          border-radius: 0 0 1rem 1rem;
+        }
+      }
     }
-    .lang-more-block {
+
+    .about-right-block {
       display: flex;
-      flex-flow: column;
       gap: 2rem;
+
+      .fav-soft-block {
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+      }
+      .lang-more-block {
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+      }
+    }
+  }
+
+  /*! socials link images*/
+  section.about-me a {
+    transition: transform 0.2s, filter 0.1s;
+    &:hover {
+      transform: scale(1.2);
+      filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.8));
     }
   }
 }
-
-/*! socials link images*/
-section.about-me a {
-  transition: transform 0.2s, filter 0.1s;
-  &:hover {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.8));
-  }
-}
-
 /* Skills */
-
 section.skills {
   padding-top: 3rem;
   margin-top: 22rem;
@@ -471,23 +469,69 @@ section.skills {
     }
   }
 
-  .skills-cards {
+  /* carousel */
+  .container-carousel {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12rem;
-    flex-wrap: nowrap;
+    /* min-height: 100vh; */
+  }
+  .wrapper {
+    max-width: 110rem;
+    width: 100%;
+    position: relative;
+  }
 
+  .wrapper i {
+    height: 5rem;
+    width: 5rem;
+    background-color: #d9c5f8;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .wrapper i:first-child {
+    left: -2.2rem;
+  }
+  .wrapper i:last-child {
+    right: -2.2rem;
+  }
+
+  .wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 1.2rem);
     margin-top: 3.5rem;
+    overflow: hidden;
+    /* height: 40.4rem; */
+  }
 
-    img {
-      transition: transform 0.3s, filter 0.3s;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-        filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.3));
-      }
+  .carousel .skill-card-li {
+    list-style: none;
+  }
+
+  .skill-card-li .skill-img-div img {
+    width: auto;
+    height: 38.4rem;
+    object-fit: cover;
+    transition: transform 0.3s, filter 0.3s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 0.1rem rgba(255, 255, 255, 0.3));
     }
+  }
+
+  .skill-card-li .skill-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41rem;
   }
 }
 
@@ -528,10 +572,21 @@ section.projects {
     }
   }
 
+  .box {
+    background-image: url(../imgs/4-Projetos/projects-images/mcast.png);
+    background-size: cover;
+    background-position: top;
+    transition: ease-in-out 4s;
+
+    &:hover {
+      background-position: bottom;
+    }
+  }
+
   .display {
     background-color: #1d1e33;
-    width: 100%;
     border-radius: 1rem;
+    width: 100%;
   }
 
   .projects-display {
@@ -804,6 +859,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-image: none;
@@ -863,5 +924,10 @@ footer {
         flex-flow: row-reverse;
       }
     }
+  }
+
+  /* skills */
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
   }
 }
