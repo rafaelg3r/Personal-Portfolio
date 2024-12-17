@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -486,6 +484,7 @@ section.about-me {
     }
   }
 }
+
 /* Skills */
 section.skills {
   /* border: solid 1px purple; */
@@ -513,8 +512,8 @@ section.skills {
   }
 
   .container-carousel {
-    /* border: solid 1px var(--purple); */
-    width: 100%;
+    border: solid 1px var(--purple);
+    max-width: 109.2rem;
     .owl-carousel {
       margin-top: 5rem;
       width: 100%;
@@ -925,15 +924,14 @@ footer {
     margin-bottom: 0rem;
     gap: 6rem;
 
-    .container-content{
-      .container-principal-text{
+    .container-content {
+      .container-principal-text {
         .name-center {
           display: block;
         }
         .name-left {
           display: none;
         }
-
       }
     }
 
@@ -946,7 +944,6 @@ footer {
         justify-content: center;
       }
     }
-
 
     .profissoes {
       align-items: center;
@@ -986,7 +983,7 @@ footer {
       align-items: center;
       justify-content: center;
 
-      #toggle-projects{
+      #toggle-projects {
         position: static;
         padding: 2rem;
       }
@@ -1006,7 +1003,7 @@ footer {
           align-items: center;
           justify-content: center;
 
-          .P-left-content{
+          .P-left-content {
             width: 100%;
           }
         }
@@ -1035,7 +1032,7 @@ footer {
         .socials-link-contact,
         .navigation-link-contact {
           display: flex;
-          flex-flow:row;
+          flex-flow: row;
           gap: 5rem;
         }
       }

@@ -1,0 +1,62 @@
+html {
+  font-size: 62.5%;
+}
+.container-carousel {
+  position: relative;
+}
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  display: inline;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem !important;
+  color: black !important;
+  background: white !important;
+  cursor: pointer;
+  border-radius: 10rem;
+}
+
+.owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    padding: 1rem 3rem;
+  }
+}
+
+.owl-theme .owl-nav .disabled {
+  cursor: default;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 0.5rem 1rem;
+  background: #d6d6d6;
+  display: block;
+  border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+  background: #6535b1 ;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #b082fc ;
+}
+
+.owl-dot:hover {
+  box-shadow: none !important;
+}
